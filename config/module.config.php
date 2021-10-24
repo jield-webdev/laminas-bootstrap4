@@ -8,12 +8,8 @@ use LaminasBootstrap4\View\Helper;
 return [
     'view_helpers'               => [
         'aliases'    => [
-
             'ztbalert'       => 'lbs4alert',
             'ztbformelement' => 'lbs4formelement',
-
-            'zf3b4navigation' => 'lbs4navigation',
-
         ],
         'factories'  => [
             Helper\Navigation::class            => Navigation\View\NavigationHelperFactory::class,

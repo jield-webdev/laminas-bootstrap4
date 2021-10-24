@@ -15,12 +15,10 @@ class Navigation extends LaminasNavigation
 {
     protected $defaultProxy = 'lbs4menu';
 
-    protected $defaultPluginManagerHelpers
+    protected array $defaultPluginManagerHelpers
         = [
-            'zf3b4menu'    => Helper\Navigation\Menu::class,
-            'ztbmenu'      => Helper\Navigation\Menu::class,
-            'ztbsubmenu'   => Helper\Navigation\SubMenu::class,
-            'zf3b4submenu' => Helper\Navigation\SubMenu::class,
+            'lbs4menu'      => Helper\Navigation\Menu::class,
+            'lbs4ubmenu'   => Helper\Navigation\SubMenu::class,
         ];
 
     public function getPluginManager(): LaminasNavigation\PluginManager

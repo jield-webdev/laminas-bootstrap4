@@ -104,7 +104,7 @@ class FilterColumnElement extends FormElement
             case 'multi_checkbox':
                 //Get the helper
                 /** @var FormMultiCheckbox $formMultiCheckbox */
-                $formMultiCheckbox = $this->getView()->plugin('zf3b4formmulticheckbox');
+                $formMultiCheckbox = $this->getView()->plugin('lbs4formmulticheckbox');
                 $formMultiCheckbox->setTemplate(
                     '<div class="form-check" data-element="%s">%s%s%s%s</div>'
                 );
@@ -113,7 +113,7 @@ class FilterColumnElement extends FormElement
             case 'radio':
                 //Get the helper
                 /** @var FormMultiCheckbox $formMultiCheckbox */
-                $formMultiCheckbox = $this->getView()->plugin('zf3b4formradio');
+                $formMultiCheckbox = $this->getView()->plugin('lbs4formradio');
                 $formMultiCheckbox->setTemplate(
                     '<div class="form-check %s">%s%s%s%s</div>'
                 );
@@ -121,7 +121,7 @@ class FilterColumnElement extends FormElement
                 return $formMultiCheckbox->render($element);
             case 'text':
             case 'search':
-                return $this->renderHelper('zf3b4forminput', $element);
+                return $this->renderHelper('lbs4forminput', $element);
             case 'button':
                 $element->setAttribute(
                     'class',
